@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+        <style>
+            img.fullscreen {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="home" data-role="page" data-title="Planifikazioa" data-theme="a">
+            <div data-role="header">
+                <h1>Planta</h1>
+            </div>
+            <div data-role="content" data-theme="a">
+                <a href="#puesto1List">
+                    <img src="img/planta.png" class="fullscreen" alt="d009_Alineador" />
+                </a>
+            </div><!-- /content -->
+            <div data-role="footer">
+            </div>
+        </div>
+        <div id="home2" data-role="page" data-title="Planifikazioa" data-theme="a">
+            <div data-role="header">
+                <h1>Planta</h1>
+            </div>
+            <div data-role="content" data-theme="a">
+                <div class="linea1"><h2>Siplace</h2>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a href="#puesto1" class="ui-shadow ui-btn ui-corner-all">Puesto 1</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a href="#" class="ui-shadow ui-btn ui-corner-all">Puesto 2</a>
+                        </div>
+                        <div class="ui-block-c">
+                            <a href="#" class="ui-shadow ui-btn ui-corner-all">Puesto 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="linea2"><h2>Assambleon</h2>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <a href="#" class="ui-shadow ui-btn ui-corner-all">Puesto 5</a>
+                        </div>
+                        <div class="ui-block-b">
+                            <a href="#" class="ui-shadow ui-btn ui-corner-all">Puesto 6</a>
+                        </div>
+                        <div class="ui-block-c">
+                            <a href="#" class="ui-shadow ui-btn ui-corner-all">Puesto 7</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /content -->
+            <div data-role="footer">
+            </div>
+        </div><!-- /page -->
+        <div data-role="page" id="puesto1List">
+            <header data-role="header">
+                <h1>Lista de instrucciones Puesto1</h1>
+                <a href="#home" data-icon="home" data-iconpos="notext">Home</a>
+
+            </header>
+            <div data-role="content" data-theme="a">
+                <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                    <li class="ui-li-has-thumb ui-first-child">
+                        <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                        <img src="img/album-bb.jpg">
+                            <h2>Broken Bells</h2>
+                            <p>Broken Bells</p></a>
+                    </li>
+                    <li class="ui-li-has-thumb">
+                        <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                        <img src="img/album-hc.jpg">
+                            <h2>Warning</h2>
+                            <p>Hot Chip</p></a>
+                    </li>
+                    <li class="ui-li-has-thumb ui-last-child">
+                        <a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                        <img src="img/album-p.jpg">
+                            <h2>Wolfgang Amadeus Phoenix</h2>
+                            <p>Phoenix</p></a>
+                    </li>
+                    <li class="ui-li-has-thumb ui-last-child">
+                        <a href="#puesto1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                        <img src="img/d009_Alineador.png">
+                            <h2>Puesto 1 d16</h2>
+                            <p>Estoy aquello y lo otro</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="page" id="puesto1">
+            <header data-role="header">
+                <a href="#puesto1List" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-left ui-btn-inline ui-corner-all ui-mini" data-role="button" role="button">Volver</a>
+                <h1>Puesto1</h1>
+                <a href="#home" class="ui-btn-right ui-btn ui-icon-home ui-btn-icon-left ui-btn-inline ui-corner-all ui-mini" data-role="button" role="button">Home</a>
+                <!-- <a href="#home" class="ui-btn-left ui-btn-right" data-icon="home" data-iconpos="notext">Home</a> -->
+            </header>
+            <img src="img/d009_Alineador.png" class="fullscreen" alt="d009_Alineador" />
+        </div><!-- Page Gummy Bears -->
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/planification.js"></script>
+    </body>
+</html>
