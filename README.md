@@ -1,3 +1,3 @@
 
 #Instrucciones
-Cordova app for consuming sf2-instrucciones api
+Cordova app for consuming mvc-instrucciones api
