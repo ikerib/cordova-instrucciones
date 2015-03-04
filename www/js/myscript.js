@@ -74,3 +74,16 @@ function buildViewerOptions()
     }
     return options;
 };
+
+$('.btnpuesto').on('click', function() {
+
+    $.getJSON('/api/listdirectory', function(json, textStatus) {
+            var lista = $('#filelist');
+            $.each(data, function(index, val) {
+                var row = '<li class="ui-li-has-thumb ui-first-child"><a href="#" class="ui-btn ui-btn-icon-right ui-icon-carat-r"><img src="img/album-bb.jpg"><h2>Broken Bells</h2><p>Broken Bells</p></a></li>'
+                $(lista).clear();
+                $(lista).append(row);
+            });
+    });
+
+})
